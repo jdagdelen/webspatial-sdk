@@ -160,6 +160,20 @@ export default defineConfig({
 });
 ```
 
+In a NextJS project, you can export a Metadata object in your main layout, which will inject the corresponding HTML tags:
+
+```
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SpatialSDK Demo",
+  description: "WebSpatial SDK demonstration app",
+  manifest: "/manifest.webmanifest",
+};
+
+...
+
+```
 ---
 
 Next step: [Test PWA Installability](test-pwa-installability.md)
